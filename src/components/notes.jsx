@@ -71,7 +71,7 @@ function Notes({ title, content, completed,importy, keyy, setTodos, todos }) {
     return <div className={`notes-container {} relative lg:w-[22%] md:w-[30%] w-[90%] border-style hover:bg-slate-700`} title= {completed ? "Completed" : "Incomplete"}   style={style} id={keyy}>
         <div className=" flex notes-heading text-base pb-3">
 
-            {edit ? (<input defaultValue={title} className="flex-1 text-base max-w-[95%]" id={keyy+"h"} />) : (<h1 style={{ overflowWrap: 'break-word' }}>{title}</h1>)}
+            {edit ? (<input defaultValue={title} className="flex-1 text-base max-w-[95%] outline-amber-500 border-none rounded-none" id={keyy+"h"} />) : (<h1 style={{ overflowWrap: 'break-word' }}>{title}</h1>)}
             {/* <span className="colYellow font-extrabold">---</span> */}
         </div>
         <div className="notes-content">
