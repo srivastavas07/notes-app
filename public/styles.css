@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600;700&family=Poppins:ital,wght@0,400;0,500;1,500&family=Roboto+Condensed:wght@300;400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family:"poppins",sans-serif;
+}
+:root{
+    --primary-color:#0b1120;
+    --notes-color:rgb(30,41,59);
+
+}
+body{
+    margin:0;
+    padding:0;
+    /* background:white; */
+}
+.header{
+    background:var(--primary-color);
+    padding:15px 20px;
+    width:100%;
+    color:#fff;
+    font-size:2rem;
+    font-family:"poppins",sans-serif;
+    font-style: italic;
+}
+.notes-container{
+    padding:25px 13px 60px 25px;
+    margin:15px;
+    background:var(--notes-color);
+    border-radius: 9px;
+    color:white;
+    border-bottom: 2px solid rgba(250, 189, 5, 0.832);
+    transition : all .5s;
+
+}
+.notes-container h1{
+    color: rgb(203,213,225);
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+.notes-container:hover{
+    transform: scale(1.05);
+}
+.notes-container p{
+    color: rgb(203,213,225);
+    line-height: 28px;
+    letter-spacing:1px;
+    word-spacing: 5px;
+}
+.colYellow{
+    color : rgba(250, 189, 5, 0.832);
+    letter-spacing: 2px;
+}
+.editPara{
+    line-height: 28px;
+    letter-spacing:1px;
+    word-spacing: 5px;
+}

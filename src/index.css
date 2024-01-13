@@ -1,13 +1,46 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.border-style{
+    border-top : 1px solid rgba(255, 255, 255, 0.068);
+}
+.inputContainer{
+    border-radius: 5px;
+    background-color: rgb(30,41,59);
+    color: white;
+}
+.MainContainer{
+    background-color: #10172a;
+}
+input,textarea{
+    background-color: transparent;
+}
+.input:active{
+    background-color: transparent;
+}
+.addButton{
+    background-color:rgb(250,188,5);
+    border-top: 1px solid rgba(255, 249, 126, 0.695);
+}
+.addButton:hover{
+    background-color: rgb(250, 211, 93);
+    color:rgb(27, 27, 27);
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+.options{
+    position :absolute;
+    bottom:20px;
+    right: 14px;
+}
+.icon{
+    padding: 5px;
+    border-radius: 50px;
+    transition:all .5s;
+}
+.icon:hover{
+    background: black;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+
+
